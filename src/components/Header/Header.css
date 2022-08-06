@@ -1,0 +1,115 @@
+.header_container {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.65),
+      rgb(0, 0, 0, 0.8)
+    ),
+    url("https://cdn.pixabay.com/photo/2016/12/26/08/41/coding-1931667_1280.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.header-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+.grid-item {
+  padding: 50px;
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item_one h1 {
+  word-spacing: 5px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+.heading__description {
+  margin-top: 50px;
+  color: orange;
+  font-size: 25px;
+  font-family: roboto, arial, helvetica, sans-serif;
+}
+.profile_picture img {
+  margin-top: -50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 5px solid #fff;
+}
+
+.header__actions {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 500px;
+  text-align: center;
+}
+
+.hireme-btn {
+  background-color: orange;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #000;
+  width: 200px;
+  padding: 10px;
+  border-style: none;
+  transition: all 1s;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.hireme-btn:hover {
+  transform: translateY(-6px);
+}
+.hireme-btn::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  border-radius: 3px;
+  z-index: -1;
+  transition: all 1s ease-out;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hireme-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.header__actions__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header__actions__socials a {
+  text-decoration: none;
+  color: orange;
+}
+
+.header__actions__socials a:not(:last-child) {
+  margin-right: 40px;
+}
