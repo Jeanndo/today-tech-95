@@ -1,85 +1,76 @@
-:root {
-  --mainColor: #fff;
-  --navcolor: #555;
-  --mainColorLight: #4fd3ff;
-  --secondaryColor: #555;
-  --textColor: #000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 0px 2rem;
-  background-color: var(--mainColor);
-  color: var(--textColor);
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+.navbgcolor {
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 100;
-  font-family: roboto;
 }
-nav a {
-  margin: 0 10px;
-  color: var(--navcolor);
+
+.landing__logo:hover {
   text-decoration: none;
-  text-transform: uppercase;
+  color: white;
 }
-/* nav a:link {
-  color: blue;
+.landing__logo h3 {
+  text-decoration: none;
+  color: white;
 }
-nav a:active {
-  border-bottom: 2px solid orange;
+.nav__items {
+  margin-left: 100px;
 }
-nav a:visited {
-  color: purple;
-} */
-nav a:hover {
-  color: var(--secondaryColor);
+.nav__items__lang {
+  width: 90px;
+  height: 25px;
+  border-style: none;
+  color: rgb(124, 124, 124);
+  font-weight: bold;
+  font-size: 13px;
+  font-family: "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+.nav__items .nav__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #ffff;
 }
 
-header .nav-btn {
-  padding: 5px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--textColor);
-  visibility: hidden;
-  opacity: 0;
+@media (max-width: 768px) {
+  .nav__items {
+    margin-left: 250px;
+  }
+  .signup__btn {
+    margin-left: -5px;
+  }
 }
 
-header .nav-login-btn {
-  width: 100px;
-  padding: 5px;
-  border-radius: 3px;
-  cursor: pointer;
-  background: orange;
-  outline: none;
-  border: none;
+@media (max-width: 425px) {
+  .nav__items {
+    margin-left: 100px;
+  }
+  .signup__btn {
+    margin-left: -5px;
+  }
 }
-@media (max-width: 1024px) {
-  header .nav-btn {
-    visibility: visible;
-    opacity: 1;
+
+@media (max-width: 375px) {
+  .nav__items {
+    margin-left: 90px;
   }
-  header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    background-color: var(--mainColor);
-    transition: 1s;
-    transform: translateY(-100vh);
-    flex-direction: column;
+  .signup__btn {
+    margin-left: -5px;
   }
-  header .responsive_nav {
-    transform: none;
+}
+
+@media (max-width: 320px) {
+  .nav__items {
+    margin-left: 70px;
+  }
+  .signup__btn {
+    margin-left: -10px;
   }
 }

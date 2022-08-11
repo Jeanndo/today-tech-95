@@ -1,0 +1,37 @@
+.skills__container {
+  padding: 100px 0px;
+}
+.skills__container .skills__heading {
+  text-align: center;
+  margin-bottom: 100px;
+  line-height: 10px;
+  letter-spacing: 5px;
+  color: #009ccf;
+  text-transform: uppercase;
+}
+.skills__container__stacks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills__container__stacks .skills:not(:last-child) {
+  margin-left: 20px;
+}
+.skills__container__stacks .skills {
+  margin-left: 20px;
+  border: 1px solid #009ccf;
+  border-radius: 50px;
+  padding: 5px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.skills__container__stacks .skills h1 {
+  font-weight: 100;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+}
+.skills__container__stacks .skills h1:hover {
+  color: #009ccf;
+  cursor: pointer;
+}

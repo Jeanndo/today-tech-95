@@ -1,0 +1,85 @@
+.timeLine {
+  background-color: #3da3d5;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  margin: 50px 0px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  color: rgb(201, 251, 255);
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #06d6a0;
+  color: #fff;
+}
+.workButton:active {
+  color: #fff;
+}
+.workButton:link {
+  color: #fff;
+}
+
+.workButton:hover {
+  background-color: #0ac593;
+  text-decoration: none;
+}
+
+.schoolButton {
+  background-color: #f9c74f;
+  text-decoration: none;
+}
+
+.schoolButton:hover {
+  background-color: #f3bc3c;
+  color: #000;
+  text-decoration: none;
+}
+
+.schoolButton:active {
+  color: #fff;
+}
+.schoolButton:link {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}

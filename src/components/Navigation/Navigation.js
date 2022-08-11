@@ -1,38 +1,48 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Navigation.css";
-import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const Navigation = () => {
-  const navRef = useRef();
-
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
-
   return (
-    <header>
-      <h3>TODAY TECH 95</h3>
-      <nav ref={navRef}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/portofolio">My Work</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/community">Community</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/auth">
-          <button className="nav-login-btn">LOGIN</button>
-        </Link>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes />
-        </button>
-      </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars />
-      </button>
-    </header>
+    <React.Fragment>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className="navbgcolor"
+        bg="dark"
+        variant="dark"
+        fixed="top"
+      >
+        <Container>
+          <Navbar.Brand href="/" className="landing__logo">
+            <h3>TODAY TECH 95</h3>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto nav__items">
+              <Nav.Link href="#" className="nav__link">
+                HOME
+              </Nav.Link>
+              <Nav.Link href="#skills" className="nav__link">
+                SKILLS
+              </Nav.Link>
+              <Nav.Link href="#services" className="nav__link">
+                SERVICES
+              </Nav.Link>
+              <Nav.Link href="#work" className="nav__link">
+                MY WORK
+              </Nav.Link>
+              <Nav.Link href="#contact" className="nav__link">
+                CONTACT
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </React.Fragment>
   );
 };
 export default Navigation;
