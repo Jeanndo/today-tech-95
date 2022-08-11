@@ -3,11 +3,14 @@
   padding: 0;
   margin: 0;
   box-sizing: 0;
-  font-family: Mulish;
+  /* font-family: Roboto; */
 }
 
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Raleway";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .top-pane {
