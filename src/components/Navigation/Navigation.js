@@ -18,7 +18,7 @@ const Navigation = () => {
       >
         <Container>
           <Navbar.Brand href="/" className="landing__logo">
-            <h3>TODAY TECH 95</h3>
+            <h3>Jeanndo.</h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

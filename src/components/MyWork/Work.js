@@ -5,7 +5,7 @@ import Zoom from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import ByMore from "./../../Assets/bymore.png";
 import Language from "./../../Assets/Language.png";
-import Aupair from "./../../Assets/AupairServices.png";
+import Aupair from "./../../Assets/aupairversion1.PNG";
 import Center from "./../../Assets/center.png";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
@@ -50,7 +50,7 @@ const Work = () => {
                   cover={<img alt="online event system" src={ByMore} />}
                 >
                   <Meta
-                    title="Online Ticket host & Selling [React,Antd,Mui,Flutter wave]"
+                    title="Online Ticket host & Selling [React,Antd,Mui,Flutter wave] Frontend Design"
                     description={
                       <a
                         href="https://onlineevents.netlify.app"
@@ -102,7 +102,7 @@ const Work = () => {
                   cover={<img alt="Akagera-Rhein-Aupair" src={Aupair} />}
                 >
                   <Meta
-                    title="Akagera-Rhein-Aupair (Team Project)[React,mui,node js,mySql]"
+                    title="Akagera-Rhein-Aupair [React,mui,node js,mySql]"
                     description={
                       <a
                         href="https://www.akagera-rhein-aupair.org"

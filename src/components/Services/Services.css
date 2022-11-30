@@ -33,6 +33,7 @@
 }
 .card__container__service h2 {
   font-weight: 200;
+  font-size: 20px;
   color: #3e3e3e;
 }
 .service__description {

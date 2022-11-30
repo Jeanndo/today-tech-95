@@ -60,6 +60,18 @@ const skills = [
     id: 14,
     label: "PostgresSQL",
   },
+  {
+    id: 15,
+    label: "PayPal Node",
+  },
+  {
+    id: 16,
+    label: "Bootstrap",
+  },
+  {
+    id: 17,
+    label: "Threejs",
+  },
 ];
 
 const Skills = () => {

@@ -7,7 +7,7 @@ import Zoom from "react-reveal/Zoom";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import CV from "./../../Assets/Resume.pdf";
+import CV from "./../../Assets/CV.pdf";
 import Me from "./../../Assets/Up.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,7 +35,8 @@ const Header = () => {
                   <Fade left>
                     <div className="header__paragraph">
                       <p>
-                        I am a Full Stack Developer By Professional From Andela.
+                        This is Jean De Dieu UKWITEGETSE a Full Stack Developer
+                        By Professional.
                       </p>
                     </div>
 

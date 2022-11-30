@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useStyles } from "./style";
 import Grid from "@material-ui/core/Grid";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -14,6 +14,22 @@ import "./Footer.css";
 
 const Footer = () => {
   const classes = useStyles();
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSendMail = (event) => {
+    event.preventDefault();
+    setFormData({
+      fullName: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
 
   return (
     <React.Fragment>
@@ -24,53 +40,89 @@ const Footer = () => {
               #Let's Talk
             </h4>
           </Grid>
-          <Grid item xs={12} sm={4} md={4} xl={4}>
+          <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
             <div>
               <div>
                 <span className={classes.footerSubTitles}>
-                  <h1 style={{ color: "#fff" }}>Today Tech 95</h1>
+                  <h1 style={{ color: "#fff" }}>Jeanndo.</h1>
                 </span>
                 <span className={classes.footerSubTitles}>
-                  <h4 style={{ color: "#fff" }}>
-                    Email:&nbsp;&nbsp;jeanndo.dev@gmail.com
-                  </h4>
+                  <small style={{ color: "#fff" }}>
+                    &nbsp;&nbsp;jeanndo.dev@gmail.com
+                  </small>
                 </span>
                 <span className={classes.footerSubTitles}>
-                  <h4 style={{ color: "#fff" }}>
-                    Tel:&nbsp;&nbsp;0784860836/0780402713
-                  </h4>
+                  <small style={{ color: "#fff" }}>
+                    &nbsp;&nbsp;0784860836/0780402713
+                  </small>
                 </span>
               </div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={4} md={4} xl={4}>
-            <form>
+          <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+            <form onSubmit={handleSendMail}>
               <Grid container spacing={1}>
                 <Grid item xs={12} sm={12} md={6} xl={6}>
                   <input
                     type="text"
                     placeholder="Full Name"
                     className="Inputs"
+                    value={formData.fullName}
+                    onChange={(event) =>
+                      setFormData({
+                        ...formData,
+                        fullName: event.target.value,
+                      })
+                    }
                   />
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} xl={6}>
-                  <input type="email" placeholder="Email" className="Inputs" />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="Inputs"
+                    value={formData.email}
+                    onChange={(event) =>
+                      setFormData({
+                        ...formData,
+                        email: event.target.value,
+                      })
+                    }
+                  />
                 </Grid>
                 <Grid item xs={12}>
-                  <input type="text" placeholder="Subject" className="Inputs" />
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    className="Inputs"
+                    value={formData.subject}
+                    onChange={(event) =>
+                      setFormData({
+                        ...formData,
+                        subject: event.target.value,
+                      })
+                    }
+                  />
                 </Grid>
                 <Grid item xs={12}>
                   <textarea
                     placeholder="Your Message Please"
                     className="TextArea"
                     rows={7}
+                    value={formData.message}
+                    onChange={(event) =>
+                      setFormData({
+                        ...formData,
+                        message: event.target.value,
+                      })
+                    }
                   />
                 </Grid>
                 <button className="sendBtn">Send It</button>
               </Grid>
             </form>
           </Grid>
-          <Grid item xs={12} sm={4} md={4} xl={4}>
+          <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
             <div className="header__profile__picture">
               <div
                 className="badge-base LI-profile-badge"
@@ -83,7 +135,7 @@ const Footer = () => {
               ></div>
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} xl={12}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <div>
               <span className={classes.followus} style={{ color: "#fff" }}>
                 Follow me

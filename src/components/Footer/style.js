@@ -26,6 +26,7 @@ export const useStyles = makeStyles({
     color: "#FFFFFF",
     textAlign: "center",
     marginBottom: "20px",
+    marginTop: "50px",
   },
   footerSubTitles: {
     color: "#FFFFFF",

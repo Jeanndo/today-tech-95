@@ -12,15 +12,14 @@ const About = () => {
         <div className="aboutme_contents">
           <Zoom>
             <h1 className="aboutme_contents_paragraph">
-              Let's tech together, Please feel free to organize a video meeting
-              from here. we have Video calling and chatting for you and your
-              Team Members.
+              Let's tech together,Did you know that you can organize a meeting
+              from here? Yeah you can , just give it a try for free.
             </h1>
           </Zoom>
 
           <div className="join_community">
             <Zoom>
-              <a href="/meeting" className="join-btn">
+              <a href="/meeting" className="join-btn" target="_blank">
                 #Create a meeting.
               </a>
             </Zoom>
